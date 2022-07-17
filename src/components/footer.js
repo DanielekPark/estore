@@ -85,7 +85,7 @@ export default function Footer() {
           <div className='group lg:w-1/2'>
             <div className='aspect-w-3 aspect-h-4 sm:aspect-none h-52 lg:h-60'>
               <img
-                src='../images/shirts.jpeg'
+                src='https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg'
                 alt='placeholder'
                 className='w-full h-full object-center object-cover'
               />
