@@ -6,7 +6,8 @@ import truck from '../images/truck.svg'
 import warranty from '../images/warranty.svg'
 import moncler from '../images/moncler.svg'
 import plane from '../images/plane.png'
-
+import Reviews from '../components/reviews'
+import '../styles/styles.css'
 
 const IndexPage = () => {
   return (
@@ -134,8 +135,8 @@ const IndexPage = () => {
               <blockquote className='relative'>
                 <footer className=''>
                   <div className=''>
-                    {/* Slider 
-                    <Slider />*/}
+                    {/* REVIEWS */}
+                    <Reviews />
                     <p className='pt-4 lg:ml-24'>
                       <a href='#'>{'Shop The Carry On >'}</a>
                     </p>
@@ -239,7 +240,7 @@ const IndexPage = () => {
             Shop the store
           </h2>
           <div className='grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-x-8'>
-            <div className='group relative overflow-hidden'>
+            <div className='relative overflow-hidden'>
               <div className='aspect-w-3 aspect-h-4 sm:aspect-none shop-img'>
                 <img
                   src='https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg'
