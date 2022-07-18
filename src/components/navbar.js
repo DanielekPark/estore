@@ -3,31 +3,31 @@ import React from 'react'
 export default function Navbar() {
   return (
     <header>
-      <nav className='bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800'>
-        <div className='flex flex-wrap justify-between items-center mx-auto max-w-screen-xl'>
-          <a href='https://flowbite.com' className='flex items-center'>
-            <img
-              src='https://flowbite.com/docs/images/logo.svg'
-              className='mr-3 h-6 sm:h-9'
-              alt='Flowbite Logo'
-            />
-            <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
-              Flowbite
-            </span>
-          </a>
+      <nav className='bg-white border-gray-200 px-4 lg:px-6 py-8 dark:bg-gray-800'>
+        <div className='flex flex-wrap justify-between items-center mx-auto w-11/12'>
+          <div className='lg:mr-20'>
+            <a href='https://flowbite.com' className='flex items-center'>
+              <img
+                src='https://flowbite.com/docs/images/logo.svg'
+                className='mr-3 h-6 sm:h-9'
+                alt='Flowbite Logo'
+              />
+              <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
+                Logo
+              </span>
+            </a>
+          </div>
+          <div className='my-auto ml-auto mr-4 lg:order-3'>
+            <select
+              id='countries'
+              className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white'
+            >
+              <option defaultValue>Language</option>
+              <option value='US'>United States</option>
+              <option value='CA'>Canada</option>
+            </select>
+          </div>
           <div className='flex items-center lg:order-2'>
-            <a
-              href='#'
-              className='text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800'
-            >
-              Log in
-            </a>
-            <a
-              href='#'
-              className='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800'
-            >
-              Get started
-            </a>
             <button
               data-collapse-toggle='mobile-menu-2'
               type='button'
@@ -66,14 +66,13 @@ export default function Navbar() {
             className='hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1'
             id='mobile-menu-2'
           >
-            <ul className='flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0'>
+            <ul className='flex flex-col mt-4 text-xl lg:flex-row lg:space-x-8 lg:mt-0'>
               <li>
                 <a
                   href='#'
-                  className='block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white'
-                  aria-current='page'
+                  className='block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700'
                 >
-                  Home
+                  Shop
                 </a>
               </li>
               <li>
@@ -81,7 +80,7 @@ export default function Navbar() {
                   href='#'
                   className='block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700'
                 >
-                  Company
+                  About
                 </a>
               </li>
               <li>
@@ -89,31 +88,7 @@ export default function Navbar() {
                   href='#'
                   className='block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700'
                 >
-                  Marketplace
-                </a>
-              </li>
-              <li>
-                <a
-                  href='#'
-                  className='block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700'
-                >
-                  Features
-                </a>
-              </li>
-              <li>
-                <a
-                  href='#'
-                  className='block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700'
-                >
-                  Team
-                </a>
-              </li>
-              <li>
-                <a
-                  href='#'
-                  className='block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700'
-                >
-                  Contact
+                  Personalize
                 </a>
               </li>
             </ul>

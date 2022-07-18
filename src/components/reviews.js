@@ -34,11 +34,11 @@ export default function Reviews() {
         showArrows={true}
       >
         {/* PERSON 1 */}
-        <div className='text-left lg:flex lg:flex-row-reverse lg:gap-x-2 lg:mb-20'>
-          <div className='lg:flex-1 lg:flex lg:flex-col lg:justify-around'>
-            <p className='text-left'>Rated 5 stars by our customers</p>
+        <div className='text-left lg:flex lg:flex-row-reverse lg:gap-x-2 lg:mb-0'>
+          <div className='lg:flex-1 lg:flex lg:flex-col lg: lg:pl-16 '>
+            <p className='text-left lg:mb-4 lg:text-lg'>Rated 5 stars by our customers</p>
             {/* STAR RATINGS  */}
-            <div className='inline-flex my-8 md:mb-4 lg:mb-0 lg:mt-0'>
+            <div className='inline-flex my-8 md:mb-4 lg:mb-16'>
               {person1.map((star, index) => {
                 return (
                   <svg
@@ -58,7 +58,7 @@ export default function Reviews() {
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
                 expedita voluptas culpa sapiente alias molestiae."
               </p>
-              <p className='text-xl font-semibold'>-person 1</p>
+              <p className='text-xl font-semibold lg:mt-8'>-person 1</p>
             </div>
           </div>
           <div className='mb-10 lg:flex-1 lg:mb-0'>
@@ -69,11 +69,12 @@ export default function Reviews() {
             />
           </div>
         </div>
-        <div className='text-left lg:flex lg:flex-row-reverse lg:gap-x-2 lg:mb-20'>
-          <div className='lg:flex-1 lg:flex lg:flex-col lg:justify-around'>
-            <p className='text-left'>Rated 5 stars by our customers</p>
+        {/* PERSON 1 */}
+        <div className='text-left lg:flex lg:flex-row-reverse lg:gap-x-2 lg:mb-0'>
+          <div className='lg:flex-1 lg:flex lg:flex-col lg: lg:pl-16 '>
+            <p className='text-left lg:mb-4 lg:text-lg'>Rated 5 stars by our customers</p>
             {/* STAR RATINGS  */}
-            <div className='inline-flex my-8 md:mb-4 lg:mb-0 lg:mt-0'>
+            <div className='inline-flex my-8 md:mb-4 lg:mb-16'>
               {person1.map((star, index) => {
                 return (
                   <svg
@@ -93,10 +94,10 @@ export default function Reviews() {
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
                 expedita voluptas culpa sapiente alias molestiae."
               </p>
-              <p className='text-xl font-semibold'>-person 2</p>
+              <p className='text-xl font-semibold lg:mt-8'>-person 1</p>
             </div>
           </div>
-          <div className='mb-10 lg:flex-1 lg:mb-0'>
+          <div className='mb-10 lg:flex-1 lg:mb-12'>
             <img
               src='https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80'
               className='md:object-contain'
@@ -104,11 +105,12 @@ export default function Reviews() {
             />
           </div>
         </div>
-        <div className='text-left lg:flex lg:flex-row-reverse lg:gap-x-2 lg:mb-20'>
-          <div className='lg:flex-1 lg:flex lg:flex-col lg:justify-around'>
-            <p className='text-left'>Rated 5 stars by our customers</p>
+        {/* PERSON 1 */}
+        <div className='text-left lg:flex lg:flex-row-reverse lg:gap-x-2 lg:mb-0'>
+          <div className='lg:flex-1 lg:flex lg:flex-col lg: lg:pl-16 '>
+            <p className='text-left lg:mb-4 lg:text-lg'>Rated 5 stars by our customers</p>
             {/* STAR RATINGS  */}
-            <div className='inline-flex my-8 md:mb-4 lg:mb-0 lg:mt-0'>
+            <div className='inline-flex my-8 md:mb-4 lg:mb-16'>
               {person1.map((star, index) => {
                 return (
                   <svg
@@ -128,10 +130,10 @@ export default function Reviews() {
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
                 expedita voluptas culpa sapiente alias molestiae."
               </p>
-              <p className='text-xl font-semibold'>-person 3</p>
+              <p className='text-xl font-semibold lg:mt-8'>-person 1</p>
             </div>
           </div>
-          <div className='mb-10 lg:flex-1 lg:mb-0'>
+          <div className='mb-10 lg:flex-1 lg:mb-12'>
             <img
               src='https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80'
               className='md:object-contain'
@@ -139,6 +141,7 @@ export default function Reviews() {
             />
           </div>
         </div>
+
       </Carousel>
     </div>
   )

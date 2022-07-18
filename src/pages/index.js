@@ -137,7 +137,7 @@ const IndexPage = () => {
                   <div className=''>
                     {/* REVIEWS */}
                     <Reviews />
-                    <p className='pt-4 lg:ml-24'>
+                    <p className='pt-4 md:pt-0'>
                       <a href='#'>{'Shop The Carry On >'}</a>
                     </p>
                   </div>
@@ -249,7 +249,7 @@ const IndexPage = () => {
                 />
                 <p
                   aria-hidden='true'
-                  className='text-2xl font-medium absolute text-white top-1/2 right-1/2 lg:text-6xl'
+                  className='text-2xl font-medium absolute text-white top-1/2 text-center w-full lg:text-6xl'
                 >
                   Shirts
                 </p>
@@ -264,7 +264,7 @@ const IndexPage = () => {
                 />
                 <p
                   aria-hidden='true'
-                  className='text-2xl font-medium absolute text-white top-1/2 right-1/2 lg:text-6xl'
+                  className='text-2xl font-medium absolute text-white top-1/2 text-center w-full lg:text-6xl'
                 >
                   Shorts
                 </p>
@@ -279,7 +279,7 @@ const IndexPage = () => {
                 />
                 <p
                   aria-hidden='true'
-                  className='text-2xl font-medium absolute text-white top-1/2 right-1/2 lg:text-6xl'
+                  className='text-2xl font-medium absolute text-white top-1/2 text-center w-full lg:text-6xl'
                 >
                   Caps
                 </p>
