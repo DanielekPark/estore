@@ -21,6 +21,11 @@
   transition-duration: 1000ms;
 }
 
+.iconsSection {
+  transition-delay: 500ms;
+  transition-duration: 2000ms;
+}
+
 .bestsellers:hover,
 .product:hover{
   transform: scale(1.5);

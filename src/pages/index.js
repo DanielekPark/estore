@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import Layout from '../components/layout'
 import '../styles/styles.css'
 import trial from '../images/trial.svg'
@@ -13,6 +13,20 @@ import '../styles/styles.css'
 slide animation for the svgs line 90
 */
 const IndexPage = () => {
+  const [showIcons, setShowIcons] = useState(false)
+  const iconsSection = useRef(null)
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      const scrolledDist = window.pageYOffset
+      const distanceTop = iconsSection.current?.getBoundingClientRect().top
+
+      if(scrolledDist > distanceTop) {
+        setShowIcons(true)
+      }
+    })
+  }, [])
+
   return (
     <Layout>
       <title>Home Page</title>
@@ -93,50 +107,52 @@ const IndexPage = () => {
       </section>
 
       {/* ICONS SECTION */}
-      <section className='border-t border-b border-gray-500 py-24 grid grid-cols-2 md:grid-cols-4 gap-y-1.5 md:w-11/12 md:mx-auto lg:w-full lg:border-l-0 lg:border-r-0 lg:px-24'>
-        <div className=''>
-          <p className='text-center md:block md:mb-8'>100 Day Trial</p>
-          <img
-            className='h-32 w-32 block mx-auto md:w-16 md:h-16'
-            src={trial}
-            alt='100 Day Trial'
-          />
-          <p className='text-center hidden md:hidden md:mb-8'>100 Day Trial</p>
-        </div>
+      <section ref={iconsSection} className="overflow-hidden border-t relative border-b border-gray-500 max-h-96">
+        <div className={`py-24 grid grid-cols-2 iconsSection ${showIcons ? 'opacity-1' : 'opacity-0'} md:grid-cols-4 gap-y-1.5 md:w-11/12 md:mx-auto lg:w-full lg:border-l-0 lg:border-r-0 lg:px-24`}>
+          <div className=''>
+            <p className='text-center md:block md:mb-8'>100 Day Trial</p>
+            <img
+              className='h-32 w-32 block mx-auto md:w-16 md:h-16'
+              src={trial}
+              alt='100 Day Trial'
+            />
+            <p className='text-center hidden md:hidden md:mb-8'>100 Day Trial</p>
+          </div>
 
-        <div className=''>
-          <p className='text-center md:block md:mb-8'>Free Shipping</p>
-          <img
-            className='h-32 w-32 block mx-auto md:w-16 md:h-16'
-            src={truck}
-            alt='shipping'
-          />
-          <p className='text-center hidden md:hidden md:mb-8'>Free Shipping</p>
-        </div>
+          <div className=''>
+            <p className='text-center md:block md:mb-8'>Free Shipping</p>
+            <img
+              className='h-32 w-32 block mx-auto md:w-16 md:h-16'
+              src={truck}
+              alt='shipping'
+            />
+            <p className='text-center hidden md:hidden md:mb-8'>Free Shipping</p>
+          </div>
 
-        <div className=''>
-          <p className='text-center hidden md:block md:mb-8'>
-            Lifetime Warranty
-          </p>
-          <img
-            className='h-32 w-32 block mx-auto md:w-16 md:h-16'
-            src={warranty}
-            alt='warranty'
-          />
-          <p className='text-center md:hidden'>Lifetime Warranty</p>
-        </div>
+          <div className=''>
+            <p className='text-center hidden md:block md:mb-8'>
+              Lifetime Warranty
+            </p>
+            <img
+              className='h-32 w-32 block mx-auto md:w-16 md:h-16'
+              src={warranty}
+              alt='warranty'
+            />
+            <p className='text-center md:hidden'>Lifetime Warranty</p>
+          </div>
 
-        <div className=''>
-          <p className='text-center hidden md:block md:mb-8'>Approved To Fly</p>
-          <img
-            className='h-32 w-32 block mx-auto md:w-16 md:h-16'
-            src={plane}
-            alt='https://www.flaticon.com/free-icons/plane'
-          />
-          <p className='text-center md:hidden'>Approved To Fly</p>
+          <div className=''>
+            <p className='text-center hidden md:block md:mb-8'>Approved To Fly</p>
+            <img
+              className='h-32 w-32 block mx-auto md:w-16 md:h-16'
+              src={plane}
+              alt='https://www.flaticon.com/free-icons/plane'
+            />
+            <p className='text-center md:hidden'>Approved To Fly</p>
+          </div>
         </div>
       </section>
-
+      
       <section className='bg-yellow-50 pb-4 reviews'>
         <div className='relative max-w-7xl mx-auto pt-10 pb-4 px-8 sm:px-6 lg:px-8 lg:py-20'>
           <div className='relative'>
