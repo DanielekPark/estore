@@ -1,5 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { Link } from 'gatsby'
+import ProductCard from '../components/productCard'
 
 const products = [
   {
@@ -8,14 +10,18 @@ const products = [
     href: '#',
     imageSrc:
       'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    productItems: [
+      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+      'https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg',
+    ],
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
     variants: [
-      { name: 'Black', bgColor: 'bg-pink-900', selectedColor: 'ring-gray-900' },
+      { name: 'Black', bgColor: 'bg-black', selectedColor: 'ring-gray-900' },
       {
-        name: 'Heather Grey',
-        bgColor: 'bg-blue-400',
+        name: 'White',
+        bgColor: 'bg-slate-300',
         selectedColor: 'ring-gray-400',
       },
     ],
@@ -25,15 +31,19 @@ const products = [
     item: 'Basic Tee',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+      'https://imgprd19.hobbylobby.com/e/5e/cd/e5ecd22cfe6a229cc51d6b30ef381ad1c6c064b1/700Wx700H-633792-0320.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
+    productItems: [
+      'https://imgprd19.hobbylobby.com/e/5e/cd/e5ecd22cfe6a229cc51d6b30ef381ad1c6c064b1/700Wx700H-633792-0320.jpg',
+      'https://imgprd19.hobbylobby.com/2/4f/57/24f57e245a879cb2543edd1df4e090bfebf24a45/350Wx350H-1013689-0320.jpg',
+    ],
     price: '$35',
-    color: 'Black',
+    color: 'Blue',
     variants: [
-      { name: 'Black', bgColor: 'bg-gray-900', selectedColor: 'ring-gray-900' },
+      { name: 'Blue', bgColor: 'bg-blue-600', selectedColor: 'ring-gray-900' },
       {
-        name: 'Heather Grey',
-        bgColor: 'bg-yellow-400',
+        name: 'Green',
+        bgColor: 'bg-green-600',
         selectedColor: 'ring-gray-400',
       },
     ],
@@ -43,19 +53,19 @@ const products = [
     item: 'Basic Tee',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+      'https://doubleredshop.com/6509/t-shirt-kung-fu-master-yellow.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
+    productItems: [
+      'https://doubleredshop.com/6509/t-shirt-kung-fu-master-yellow.jpg',
+      'https://target.scene7.com/is/image/Target/GUEST_3a98a9c4-1665-4882-8cdf-3f234305d676',
+    ],
     price: '$35',
-    color: 'Black',
+    color: 'Red',
     variants: [
+      { name: 'Red', bgColor: 'bg-yellow-400', selectedColor: 'ring-gray-900' },
       {
-        name: 'Black',
-        bgColor: 'bg-green-900',
-        selectedColor: 'ring-gray-900',
-      },
-      {
-        name: 'Heather Grey',
-        bgColor: 'bg-red-400',
+        name: 'Red',
+        bgColor: 'bg-red-600',
         selectedColor: 'ring-gray-400',
       },
     ],
@@ -65,15 +75,19 @@ const products = [
     item: 'Basic Tee',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+      'https://i5.walmartimages.com/asr/bd2f8fcd-43bf-4a71-ad92-1a020063dae1.d81b25437797c977bf16ac6e9c325f39.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF',
     imageAlt: "Front of men's Basic Tee in black.",
+    productItems: [
+      'https://i5.walmartimages.com/asr/bd2f8fcd-43bf-4a71-ad92-1a020063dae1.d81b25437797c977bf16ac6e9c325f39.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF',
+      'https://m.media-amazon.com/images/I/B1S8yVtUEZS._CLa%7C2140%2C2000%7C61dv2LA5eyL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UX342_.png',
+    ],
     price: '$35',
-    color: 'Black',
+    color: 'Orange',
     variants: [
-      { name: 'Black', bgColor: 'bg-gray-900', selectedColor: 'ring-gray-900' },
+      { name: 'Orange', bgColor: 'bg-orange-500', selectedColor: 'ring-gray-900' },
       {
-        name: 'Heather Grey',
-        bgColor: 'bg-gray-400',
+        name: 'Purple',
+        bgColor: 'bg-purple-600',
         selectedColor: 'ring-gray-400',
       },
     ],
@@ -85,17 +99,17 @@ const products = [
     imageSrc:
       'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
+    productItems: [
+      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+      'https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg',
+    ],
     price: '$35',
     color: 'Black',
     variants: [
+      { name: 'Black', bgColor: 'bg-black', selectedColor: 'ring-gray-900' },
       {
-        name: 'Black',
-        bgColor: 'bg-purple-900',
-        selectedColor: 'ring-gray-900',
-      },
-      {
-        name: 'Heather Grey',
-        bgColor: 'bg-orange-400',
+        name: 'White',
+        bgColor: 'bg-slate-300',
         selectedColor: 'ring-gray-400',
       },
     ],
@@ -141,53 +155,7 @@ export default function Shop() {
           {/* PRODUCTS */}
           <div className='mt-6 grid grid-cols-2 gap-y-10 gap-x-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-20'>
             {products.map((product) => {
-              const {
-                id,
-                imageSrc,
-                href,
-                item,
-                imageAlt,
-                color,
-                price,
-                variants,
-              } = product
-              return (
-                <div key={id} className='group relative'>
-                  <div className='w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden lg:aspect-none'>
-                    <img
-                      src={imageSrc}
-                      alt={imageAlt}
-                      className='object-center object-cover lg:w-full lg:h-96'
-                    />
-                  </div>
-                  <div className='mt-4 text-center'>
-                    <div className='lg:flex flex-row-reverse'>
-                      {/*  VARIANT OPTIONS */}
-                      <div className='flex justify-center w-full gap-x-1 mx-auto lg:justify-end lg:flex-1 lg:mb-2'>
-                        {variants.map((variant, i) => {
-                          const { bgColor } = variant
-                          return (
-                            <div
-                              key={`${id}${i}`}
-                              className={`p-4 shadow-sm ${bgColor} w-8 h-8 rounded-full`}
-                            ></div>
-                          )
-                        })}
-                      </div>
-                      <h3 className='font-semibold text-lg pt-2 text-gray-700 lg:text-xl'>
-                        <a href={href}>
-                          <span
-                            aria-hidden='true'
-                            className='relative inset-0'
-                          />
-                          {item}
-                        </a>
-                      </h3>
-                    </div>
-                  </div>
-                  <p className='text-sm text-center lg:text-left lg:text-lg'>{`USD ${price}`}</p>
-                </div>
-              )
+              return <ProductCard key={product.id} {...product} />
             })}
           </div>
         </div>

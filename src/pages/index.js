@@ -7,11 +7,9 @@ import warranty from '../images/warranty.svg'
 import moncler from '../images/moncler.svg'
 import plane from '../images/plane.png'
 import Reviews from '../components/reviews'
+import { Link } from 'gatsby'
 import '../styles/styles.css'
 
-/*
-slide animation for the svgs line 90
-*/
 const IndexPage = () => {
   const [showIcons, setShowIcons] = useState(false)
   const iconsSection = useRef(null)
@@ -63,11 +61,13 @@ const IndexPage = () => {
         <div className='md:mx-auto md:flex lg:gap-x-20 lg:justify-around'>
           <div className='md:flex-1'>
             <div className='overflow-hidden'>
-              <img
-                src='https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg'
-                className='block bestsellers object-cover w-full'
-                alt='shirts'
-              />
+              <Link to='/shop'>
+                <img
+                  src='https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg'
+                  className='block bestsellers object-cover w-full'
+                  alt='shirts'
+                />
+              </Link>
             </div>
             <h2 className='inline-block text-2xl my-6 font-bold'>Shirt</h2>
             <p className='text-base font-light mt-0 pb-8 md:px-2 lg:px-0'>
@@ -75,13 +75,16 @@ const IndexPage = () => {
               minus!
             </p>
           </div>
+
           <div className='hidden md:block md:flex-1'>
             <div className='overflow-hidden'>
-              <img
-                src='https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg'
-                className='block bestsellers object-cover w-full'
-                alt='shirts'
-              />
+              <Link to='/shop'>
+                <img
+                  src='https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg'
+                  className='block bestsellers object-cover w-full'
+                  alt='shirts'
+                />
+              </Link>
             </div>
             <h2 className='inline-block text-2xl my-6 font-bold'>Shirt</h2>
             <p className='text-base font-light mt-0 pb-8 md:px-2 lg:px-0'>
@@ -89,13 +92,16 @@ const IndexPage = () => {
               minus!
             </p>
           </div>
+
           <div className='hidden md:block md:flex-1'>
             <div className='overflow-hidden'>
-              <img
-                src='https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg'
-                className='block bestsellers object-cover w-full'
-                alt='shirts'
-              />
+              <Link to='/shop'>
+                <img
+                  src='https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg'
+                  className='block bestsellers object-cover w-full'
+                  alt='shirts'
+                />
+              </Link>
             </div>
             <h2 className='inline-block text-2xl my-6 font-bold'>Shirt</h2>
             <p className='text-base font-light mt-0 pb-8 md:px-2 lg:px-0'>
@@ -185,8 +191,6 @@ const IndexPage = () => {
               </p>
             </div>
           </div>
-
-
         </div>
       </section>
 
@@ -303,49 +307,55 @@ const IndexPage = () => {
           </h2>
           <div className='grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-x-8'>
             <div className='relative'>
-              <div className='aspect-w-3 aspect-h-4 sm:aspect-none shop-img overflow-hidden'>
-                <img
-                  src='https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg'
-                  alt='placeholder'
-                  className='w-full h-full object-center object-cover product'
-                />
-                <p
-                  aria-hidden='true'
-                  className='text-2xl font-medium absolute text-white top-1/2 text-center w-full lg:text-6xl'
-                >
-                  Shirts
-                </p>
-              </div>
+              <Link to='/shop'>
+                <div className='aspect-w-3 aspect-h-4 sm:aspect-none shop-img overflow-hidden'>
+                  <img
+                    src='https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg'
+                    alt='placeholder'
+                    className='w-full h-full object-center object-cover product'
+                  />
+                  <p
+                    aria-hidden='true'
+                    className='text-2xl font-medium absolute text-white top-1/2 text-center w-full lg:text-6xl'
+                  >
+                    Shirts
+                  </p>
+                </div>
+              </Link>
             </div>
             <div className='group relative '>
-              <div className='aspect-w-3 aspect-h-4 sm:aspect-none shop-img overflow-hidden'>
-                <img
-                  src='https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg'
-                  alt='placeholder'
-                  className='w-full h-full object-center object-cover product'
-                />
-                <p
-                  aria-hidden='true'
-                  className='text-2xl font-medium absolute text-white top-1/2 text-center w-full lg:text-6xl'
-                >
-                  Shorts
-                </p>
-              </div>
+              <Link to='/shop'>
+                <div className='aspect-w-3 aspect-h-4 sm:aspect-none shop-img overflow-hidden'>
+                  <img
+                    src='https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg'
+                    alt='placeholder'
+                    className='w-full h-full object-center object-cover product'
+                  />
+                  <p
+                    aria-hidden='true'
+                    className='text-2xl font-medium absolute text-white top-1/2 text-center w-full lg:text-6xl'
+                  >
+                    Shorts
+                  </p>
+                </div>
+              </Link>
             </div>
             <div className='group relative '>
-              <div className='aspect-w-3 aspect-h-4 sm:aspect-none shop-img overflow-hidden'>
-                <img
-                  src='https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg'
-                  alt='placeholder'
-                  className='w-full h-full object-center object-cover product'
-                />
-                <p
-                  aria-hidden='true'
-                  className='text-2xl font-medium absolute text-white top-1/2 text-center w-full lg:text-6xl'
-                >
-                  Caps
-                </p>
-              </div>
+              <Link to='/shop'>
+                <div className='aspect-w-3 aspect-h-4 sm:aspect-none shop-img overflow-hidden'>
+                  <img
+                    src='https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg'
+                    alt='placeholder'
+                    className='w-full h-full object-center object-cover product'
+                  />
+                  <p
+                    aria-hidden='true'
+                    className='text-2xl font-medium absolute text-white top-1/2 text-center w-full lg:text-6xl'
+                  >
+                    Caps
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
