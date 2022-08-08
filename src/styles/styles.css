@@ -21,6 +21,10 @@
   transition-duration: 1000ms;
 }
 
+.shop-product {
+  height: 20rem;
+}
+
 .bestsellers:hover,
 .product:hover{
   transform: scale(1.5);
@@ -32,12 +36,20 @@
 @media(min-width: 768px) {
   .top-img {
       height: 55vh;
-    }
+    }    
+
+  .shop-product {
+    height: 32rem;    
+  }
 }
 
 @media(min-width: 1024px) {
   .top-img {
       height: 65vh;
+    }
+
+    .shop-product {
+      height: 22rem;
     }
 
     .shop-img {

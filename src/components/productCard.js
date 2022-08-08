@@ -1,22 +1,21 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'gatsby'
 
-export default function ProductCard(props) {
+export default function ProductCard({color, href, id, imageAlt, imageSrc, price, item, variants, productItems}) {
   const imageRef = useRef(null)
-  const {color, href, id, imageAlt, imageSrc, price, item, variants, productItems} = props
 
   //WHEN USER CLICKS ON A VARIANT CIRCLE IT CHANGES THE COLOR
   const displayVariant = (index) => imageRef.current.src = productItems[index];
   
   return (
     <div className='group relative'>
-      <div className='w-full min-h-80 aspect-w-1 aspect-h-1 rounded-md overflow-hidden lg:aspect-none'>
+      <div className='w-full aspect-w-1 aspect-h-1 rounded-md overflow-hidden lg:aspect-none'>
         {/* ADD A LINK, USER GOES TO PRODUCT WHEN CLICKED */}
         <Link to="/product">
         <img
           src={imageSrc}
           alt={imageAlt}
-          className='h-96 mx-auto object-center object-cover'
+          className='shop-product w-full object-center object-cover'
           ref={imageRef}
         />
         </Link>
